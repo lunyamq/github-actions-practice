@@ -21,7 +21,9 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
-      - name: Run tests
+      - run: pyinstaller main.py
+
+      - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: app-build
