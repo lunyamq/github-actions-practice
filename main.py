@@ -1,6 +1,8 @@
 """Модуль для сложения двух чисел."""
 
-def add(a: int, b: int) -> int:
+from numbers import Number
+
+def add(a: Number, b: Number) -> Number:
     """Складывает два числа.
     
     Args:
