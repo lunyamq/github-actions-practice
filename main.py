@@ -2,4 +2,5 @@ def add(a, b):
     return a + b
 
 if __name__ == "__main__":
-    print(add(50, 2))
+    result = add(50, 2)
+    print(result)
