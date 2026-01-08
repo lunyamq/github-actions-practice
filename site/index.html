@@ -2,10 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GitHub Actions Deploy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD Demo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <h1>GitHub Actions работает!</h1>
-  <p>Сайт автоматически задеплоен через CI/CD.</p>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <i class="fas fa-rocket"></i>
+        <span>CI/CD Demo</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <h1>
+          <i class="fas fa-check-circle"></i>
+          GitHub Actions работает!
+        </h1>
+        
+        <p class="subtitle">
+          Сайт автоматически задеплоен через CI/CD пайплайн
+        </p>
+        
+        <div class="status">
+          <div class="status-item">
+            <i class="fas fa-code-branch"></i>
+            <div>
+              <small>Branch</small>
+              <strong>main</strong>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <small>Status</small>
+              <strong class="success">Success</strong>
+            </div>
+          </div>
+          
+          <div class="status-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <small>Last Deploy</small>
+              <strong id="deploy-time"></strong>
+            </div>
+          </div>
+        </div>
+        
+        <div class="badge">
+          <i class="fas fa-bolt"></i>
+          Powered by GitHub Actions
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <i class="fas fa-heart"></i> Deployed with GitHub Actions & Pages
+        <br>
+        <small id="footer-time"></small>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
