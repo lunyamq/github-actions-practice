@@ -8,4 +8,4 @@ jobs:
     uses: ./.github/workflows/python-template.yml
     with:
       python-version: "3.11"
-      command: pylint --fail-under=7.0 src/main.py
+      command: pylint --fail-under=7.0 src/main.py external\test\processor\producer.py
