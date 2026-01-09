@@ -2,7 +2,7 @@ name: Scheduled Dependency Check
 
 on:
   schedule:
-    - cron: "30 12 * * *"
+    - cron: "35 9 * * *"
   workflow_dispatch:
 
 jobs:
