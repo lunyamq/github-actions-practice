@@ -1,0 +1,3 @@
+[submodule "external/practice"]
+	path = external/practice
+	url = https://github.com/TheAlgorithms/Python.git

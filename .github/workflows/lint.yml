@@ -8,4 +8,5 @@ jobs:
     uses: ./.github/workflows/python-template.yml
     with:
       python-version: "3.11"
-      command: pylint --fail-under=7.0 src/main.py
+      command: pylint --fail-under=7.0 src/main.py external/practice/bit_manipulation/binary_and_operator.py
+      use-submodules: true
