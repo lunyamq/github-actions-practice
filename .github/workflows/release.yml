@@ -25,7 +25,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build app
-        run: pyinstaller src/main.py
+        run: pyinstaller --onefile src/main.py
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
